@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/williamlocke/Vungle.git', :tag => '3.0.10' }
   s.description = 'Vungle ads.'
   s.platform = :ios
-  s.source_files   = 'VungleSDK.framework/**/*.h'
+  s.source_files   = 'VungleSDK.framework/headers/*.h'
   s.preserve_paths = 'VungleSDK.framework/*'
   s.libraries    = 'sqlite3', 'libz'
   s.xcconfig   =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/Vungle/Classes"' }
