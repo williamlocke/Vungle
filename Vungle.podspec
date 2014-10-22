@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.source_files   = 'VungleSDK.framework/headers/*.h'
   s.preserve_paths = 'VungleSDK.framework/*'
-  s.libraries    = 'sqlite3', 'libz'
+
   s.xcconfig   =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/Vungle/Classes"' }
   s.frameworks = 'AdSupport', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreMedia', 'Foundation', 'MediaPlayer', 'QuartzCore', 'StoreKit', 'SystemConfiguration', 'UIKit'
   
-  s.resources = 'Resources.bundle'
+  s.resources = 'Resources/*'
   
 end
