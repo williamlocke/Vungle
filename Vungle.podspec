@@ -8,9 +8,10 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/williamlocke/Vungle.git', :tag => '3.0.10' }
   s.description = 'Vungle ads.'
   s.platform = :ios
-  s.source_files   = 'VungleSDK.framework/headers/*.h'
-  s.preserve_paths = 'VungleSDK.framework/*'
-
+#  s.source_files   = 'VungleSDK.framework/headers/*.h'
+#  s.preserve_paths = 'VungleSDK.framework/*'
+  
+  s.vendored_frameworks = 'VungleSDK.framework'
   s.frameworks = 'AdSupport', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreMedia', 'Foundation', 'MediaPlayer', 'QuartzCore', 'StoreKit', 'SystemConfiguration', 'UIKit'
   
   s.resources = 'Resources/*'
